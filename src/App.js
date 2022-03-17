@@ -1,9 +1,10 @@
 import './App.css';
-import Student from './Student';
+import { useState } from 'react'
 import StudentList from './StudentList';
 
 function App() {
-  const students = 
+  const [students] = useState
+(
   [
     {
       name: 'Cait Yomorta',
@@ -63,7 +64,8 @@ function App() {
         }
       ]
     }
-  ]
+  ])
+  
   return (
     <div>
       <StudentList students={students}/>
